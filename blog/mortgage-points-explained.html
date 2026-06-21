@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mortgage Points Explained — Are They Worth It? | MyHomeRates.com</title>
+  <meta name="description" content="What mortgage points are, how much they cost, and the break-even math behind buying down your rate. A plain-English guide with a worked example." />
+  <link rel="canonical" href="https://www.myhomerates.com/blog/mortgage-points-explained.html" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RLKEB7GMX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9RLKEB7GMX');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723787015797542" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    /* Page-specific: points cost visual */
+    .points-visual { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+    .points-visual h4 { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 1.1rem; }
+    .points-row { display: grid; grid-template-columns: 80px 1fr 120px; gap: 1rem; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+    .points-row:last-child { border-bottom: none; }
+    .points-row.header { font-weight: 700; color: var(--navy); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .points-cost { font-weight: 700; color: var(--gold-dark); text-align: right; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">MyHome<span>Rates</span>.com</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+        <li><a href="/fha-loan/">FHA Loans</a></li>
+        <li><a href="/refinancing/">Refinancing</a></li>
+        <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/glossary/">Glossary</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#calculator" class="nav-cta">Try Calculator</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="hero-pill"><i class="ti ti-percentage"></i> Rates</div>
+      <h1>Mortgage Points Explained — Are They Worth It?</h1>
+      <div class="page-header-meta">
+        <span><i class="ti ti-clock"></i> 8 min read</span>
+        <div class="meta-divider"></div>
+        <span><i class="ti ti-user"></i> Mike Lucas — Founder</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main-wrap">
+    <article class="article">
+
+      <!-- TOC -->
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title"><i class="ti ti-list"></i> In this guide</div>
+        <ol>
+          <li><a href="#what-are-points">What mortgage points actually are</a></li>
+          <li><a href="#how-much-they-cost">How much points cost and save</a></li>
+          <li><a href="#breakeven-math">The break-even math</a></li>
+          <li><a href="#when-worth-it">When points are worth it</a></li>
+          <li><a href="#worked-example">Worked example — to buy or not to buy</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <!-- INTRO -->
+      <p>Mortgage points let you pay money upfront in exchange for a lower interest rate — but whether that trade makes sense depends entirely on one calculation most buyers never run. This guide explains exactly what points cost, what they save, and how to know if buying them is the right move for you.</p>
+
+      <div class="callout callout-tip">
+        <i class="ti ti-info-circle"></i>
+        <div class="callout-content">
+          <strong>Who this guide is for</strong>
+          <p>Anyone who's been offered the option to "buy down" their rate with points and wants to understand whether it's actually a good deal.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 1 -->
+      <h2 id="what-are-points">1. What mortgage points actually are</h2>
+
+      <p>One discount point equals 1% of your loan amount, paid upfront at closing, in exchange for a reduced interest rate. On a $300,000 loan, one point costs $3,000. Points are entirely optional — you're never required to buy them, and lenders must offer a no-points option alongside any points-included quote.</p>
+
+      <p>Don't confuse discount points (which reduce your rate) with origination points, which are a lender fee unrelated to rate reduction — always clarify which type is being discussed in any quote.</p>
+
+      <!-- SECTION 2 -->
+      <h2 id="how-much-they-cost">2. How much points cost and save</h2>
+
+      <div class="points-visual">
+        <h4>Typical points pricing on a $300,000 loan</h4>
+        <div class="points-row header">
+          <span>Points</span><span>Approx. rate reduction</span><span>Upfront cost</span>
+        </div>
+        <div class="points-row">
+          <span>0.5 pt</span><span>~0.125%</span><span class="points-cost">$1,500</span>
+        </div>
+        <div class="points-row">
+          <span>1 pt</span><span>~0.25%</span><span class="points-cost">$3,000</span>
+        </div>
+        <div class="points-row">
+          <span>2 pts</span><span>~0.5%</span><span class="points-cost">$6,000</span>
+        </div>
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;">These ratios are approximate and vary by lender and market conditions — always get the exact figures on your specific Loan Estimate.</p>
+      </div>
+
+      <!-- SECTION 3 -->
+      <h2 id="breakeven-math">3. The break-even math</h2>
+
+      <p>The calculation is the same logic as refinancing: <strong>points cost ÷ monthly savings = months to break even</strong>. If you stay in the home beyond the break-even point, the points save you money. If you sell or refinance before then, you lose money on the points purchase.</p>
+
+      <div class="callout callout-key">
+        <i class="ti ti-key"></i>
+        <div class="callout-content">
+          <strong>Points typically break even in 4-7 years</strong>
+          <p>This is a rough rule of thumb, not a guarantee — always calculate your specific numbers. If you're confident you'll keep the loan well beyond that window, points are usually worth considering. If you might move or refinance sooner, they usually aren't.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 4 -->
+      <h2 id="when-worth-it">4. When points are worth it</h2>
+
+      <ul>
+        <li>You're confident you'll keep the loan for 7+ years</li>
+        <li>You have the cash available without depleting your emergency fund or down payment</li>
+        <li>You're not planning to refinance in the near term</li>
+        <li>The rate reduction offered is genuinely favourable compared to the cost (always verify the actual numbers — don't assume standard ratios)</li>
+      </ul>
+
+      <p>Points are generally not worth it if you might move within a few years, if you're using your last available cash to buy them, or if you anticipate refinancing soon regardless of rate movements.</p>
+
+      <!-- SECTION 5 — WORKED EXAMPLE -->
+      <h2 id="worked-example">5. Worked example — to buy or not to buy</h2>
+
+      <div class="example-box">
+        <div class="example-label">Worked example</div>
+        <div class="example-title">Robert — deciding on 2 points on a $320,000 loan</div>
+        <div class="example-grid">
+          <div class="example-stat">
+            <span class="example-stat-num">$6,400</span>
+            <span class="example-stat-label">Cost of 2 points</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">6.95% → 6.45%</span>
+            <span class="example-stat-label">Rate with points</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">12+ years</span>
+            <span class="example-stat-label">Robert's planned stay</span>
+          </div>
+        </div>
+        <div class="example-body">
+          <p>Without points: 6.95% rate, monthly P&amp;I ≈ $2,118.</p>
+          <p>With 2 points ($6,400 upfront): 6.45% rate, monthly P&amp;I ≈ $2,015.</p>
+          <p>Monthly savings: <strong>$103</strong>. Break-even: $6,400 ÷ $103 = <strong>approximately 62 months</strong> (just over 5 years).</p>
+          <p>Robert plans to stay in this home at least 12 years — well beyond the break-even point. Over the full 30-year loan term, the points will have saved him approximately <strong>$30,500</strong> in reduced interest beyond their cost. For Robert's specific situation and timeline, buying the points is the financially sound choice.</p>
+          <p>Had Robert instead expected to move in 3-4 years, this same offer would have cost him money rather than saved it — illustrating why the decision depends entirely on individual circumstances, not the points offer alone.</p>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            Are mortgage points tax deductible?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Points paid on a primary residence purchase are often deductible in the year paid, subject to specific IRS conditions. Points paid on a refinance are typically deducted gradually over the life of the loan rather than all at once. See <a href="https://www.irs.gov/pub/irs-pdf/p936.pdf" target="_blank" rel="noopener">IRS Publication 936</a> and consult a tax professional for your specific situation, as conditions and eligibility can vary.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Can the seller pay for points on my behalf?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Yes, in many cases — seller-paid points are a negotiable part of purchase contracts, particularly in buyer's markets. This effectively gets you a lower rate at no cost to you, making the break-even calculation irrelevant since you didn't pay for the points yourself.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Is it better to buy points or make a larger down payment?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">These serve different purposes. A larger down payment reduces your loan amount and can eliminate PMI at the 20% threshold. Points reduce your rate on whatever loan amount you have. Run both calculations separately — sometimes a larger down payment to cross the PMI threshold offers better value than the same money spent on points.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Do negative points exist — can I get a credit instead?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Yes — this is sometimes called a "lender credit" and works in reverse. You accept a higher interest rate in exchange for a credit toward your closing costs, useful if you're short on upfront cash but plan to refinance or sell relatively soon, making the long-term rate cost less important than near-term cash flow.</div>
+        </div>
+      </div>
+
+      <!-- EDITORIAL DISCLAIMER -->
+      <div class="editorial-disclaimer">
+        <strong>Editorial disclaimer:</strong> This article is written for general
+        educational purposes and does not constitute financial, mortgage, or tax
+        advice. Points pricing ratios are approximate illustrations and vary by
+        lender. Tax information sourced from
+        <a href="https://www.irs.gov/pub/irs-pdf/p936.pdf" target="_blank" rel="noopener">IRS Publication 936</a>.
+        Always consult a licensed mortgage professional before making borrowing
+        decisions. Content researched and edited by Mike Lucas, with the assistance
+        of AI writing tools.
+      </div>
+
+      <!-- AUTHOR BIO -->
+      <div class="author-bio">
+        <div class="author-avatar">
+          <i class="ti ti-user" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span class="author-label">About the author</span>
+          <span class="author-name">Mike Lucas — Founder, MyHomeRates.com</span>
+          <p class="author-desc">
+            Mike is a UK-based personal finance researcher who built MyHomeRates.com
+            after studying the US mortgage market and finding that millions of American
+            homeowners navigate the biggest financial decision of their lives without
+            plain-English guidance.
+            <a href="/about/">Read Mike's full story →</a>
+          </p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-card">
+        <h3>In this guide</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="#what-are-points"><i class="ti ti-arrow-right"></i> What points are</a></li>
+          <li><a href="#how-much-they-cost"><i class="ti ti-arrow-right"></i> Cost and savings</a></li>
+          <li><a href="#breakeven-math"><i class="ti ti-arrow-right"></i> Break-even math</a></li>
+          <li><a href="#when-worth-it"><i class="ti ti-arrow-right"></i> When worth it</a></li>
+          <li><a href="#worked-example"><i class="ti ti-arrow-right"></i> Worked example</a></li>
+          <li><a href="#faq"><i class="ti ti-arrow-right"></i> FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="/fixed-rate-mortgage/"><i class="ti ti-arrow-right"></i> Fixed-rate mortgages</a></li>
+          <li><a href="/blog/how-to-get-lowest-mortgage-rate.html"><i class="ti ti-arrow-right"></i> How to get the lowest rate</a></li>
+          <li><a href="/blog/is-mortgage-interest-tax-deductible.html"><i class="ti ti-arrow-right"></i> Tax deductibility guide</a></li>
+          <li><a href="/glossary/"><i class="ti ti-arrow-right"></i> Mortgage glossary</a></li>
+        </ul>
+      </div>
+
+      <a href="/#calculator" class="sidebar-cta">
+        <i class="ti ti-calculator"></i> Try the mortgage calculator
+      </a>
+
+    </aside>
+  </div>
+
+  <!-- SITE DISCLAIMER -->
+  <div class="site-disclaimer">
+    <p>
+      <strong>Editorial disclaimer:</strong> MyHomeRates.com is an independent
+      educational publisher. We have no lender relationships and receive no commission
+      from any financial product. Content on this site is researched and edited by
+      Mike Lucas, with the assistance of AI writing tools. Nothing on this site
+      constitutes financial advice. Always consult a licensed mortgage professional
+      before making borrowing decisions.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand-name">MyHome<span>Rates</span>.com</span>
+          <p class="footer-brand-desc">Independent mortgage education for US homeowners.
+            No lender relationships. No sales pitch. Just plain-English guidance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Mortgages</h4>
+          <ul>
+            <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+            <li><a href="/fha-loan/">FHA Loans</a></li>
+            <li><a href="/refinancing/">Refinancing</a></li>
+            <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/blog/">All Articles</a></li>
+            <li><a href="/glossary/">Glossary</a></li>
+            <li><a href="/#calculator">Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-use/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MyHomeRates.com · All rights reserved · An independent Mike Lucas publication</p>
+        <div class="footer-legal">
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms-of-use/">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JS -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

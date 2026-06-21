@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Average Mortgage Rates — What's Normal? | MyHomeRates.com</title>
+  <meta name="description" content="Are today's mortgage rates high or low by historical standards? A clear-eyed look at decades of rate history to give today's numbers real context." />
+  <link rel="canonical" href="https://www.myhomerates.com/blog/average-mortgage-rates.html" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RLKEB7GMX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9RLKEB7GMX');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723787015797542" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    /* Page-specific: decade timeline bars */
+    .decade-visual { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+    .decade-visual h4 { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 1.1rem; }
+    .decade-row { display: grid; grid-template-columns: 100px 1fr 70px; gap: 1rem; align-items: center; margin-bottom: 0.85rem; }
+    .decade-row:last-child { margin-bottom: 0; }
+    .decade-label { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+    .decade-bar-track { height: 22px; background: var(--bg); border-radius: 6px; overflow: hidden; border: 1px solid var(--border); position: relative; }
+    .decade-bar-fill { height: 100%; background: linear-gradient(90deg, var(--navy) 0%, var(--navy-mid) 100%); border-radius: 6px; }
+    .decade-rate { font-size: 0.85rem; font-weight: 700; color: var(--navy); text-align: right; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">MyHome<span>Rates</span>.com</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+        <li><a href="/fha-loan/">FHA Loans</a></li>
+        <li><a href="/refinancing/">Refinancing</a></li>
+        <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/glossary/">Glossary</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#calculator" class="nav-cta">Try Calculator</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="hero-pill"><i class="ti ti-trending-up"></i> Rates</div>
+      <h1>Average Mortgage Rates — What's Normal?</h1>
+      <div class="page-header-meta">
+        <span><i class="ti ti-clock"></i> 10 min read</span>
+        <div class="meta-divider"></div>
+        <span><i class="ti ti-user"></i> Mike Lucas — Founder</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RATE SOURCE BANNER -->
+  <div class="rate-source-banner">
+    <div class="rate-source-banner-inner">
+      <i class="ti ti-info-circle"></i>
+      <p>
+        Current mortgage rate averages are published weekly by Freddie Mac.
+        Check the latest figure at the
+        <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac Primary Mortgage Market Survey →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main-wrap">
+    <article class="article">
+
+      <!-- TOC -->
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title"><i class="ti ti-list"></i> In this guide</div>
+        <ol>
+          <li><a href="#why-context-matters">Why historical context matters</a></li>
+          <li><a href="#decade-by-decade">Rates decade by decade</a></li>
+          <li><a href="#why-rates-feel-high">Why today's rates can feel high</a></li>
+          <li><a href="#what-drives-changes">What drives long-term rate changes</a></li>
+          <li><a href="#worked-example">Worked example — the payment impact of "normal"</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <!-- INTRO -->
+      <p>Whenever mortgage rates move, headlines tend to frame the change as dramatic — "rates surge" or "rates plunge." But without historical context, it's hard to know whether today's rate environment is actually unusual, or simply a return to something closer to the long-term norm.</p>
+
+      <p>This guide looks at mortgage rates through a longer lens — what's actually "average" across recent decades, and why the ultra-low rates of the early 2020s were the historical outlier, not the other way around.</p>
+
+      <div class="callout callout-tip">
+        <i class="ti ti-info-circle"></i>
+        <div class="callout-content">
+          <strong>Who this guide is for</strong>
+          <p>Anyone trying to make sense of whether current mortgage rates are "good" or "bad" by looking at where rates have actually been over time.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 1 -->
+      <h2 id="why-context-matters">1. Why historical context matters</h2>
+
+      <p>Many current buyers formed their sense of "normal" mortgage rates during 2020–2021, when 30-year fixed rates briefly dropped below 3% — driven by emergency Federal Reserve policy during the pandemic. That period was historically exceptional, not typical. Comparing today's rates only against that narrow window creates a distorted impression.</p>
+
+      <p>Looking at a longer historical record — using data from the <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a>, which has tracked the 30-year fixed rate since 1971 — gives a far more useful picture.</p>
+
+      <!-- SECTION 2 -->
+      <h2 id="decade-by-decade">2. Rates decade by decade</h2>
+
+      <p>Here's an approximate picture of average 30-year fixed mortgage rates by decade, based on long-run Freddie Mac PMMS historical data:</p>
+
+      <div class="decade-visual">
+        <h4>Approximate 30-year fixed average by decade</h4>
+        <div class="decade-row">
+          <span class="decade-label">1970s</span>
+          <div class="decade-bar-track"><div class="decade-bar-fill" style="width:55%;"></div></div>
+          <span class="decade-rate">~8.9%</span>
+        </div>
+        <div class="decade-row">
+          <span class="decade-label">1980s</span>
+          <div class="decade-bar-track"><div class="decade-bar-fill" style="width:100%;"></div></div>
+          <span class="decade-rate">~12.7%</span>
+        </div>
+        <div class="decade-row">
+          <span class="decade-label">1990s</span>
+          <div class="decade-bar-track"><div class="decade-bar-fill" style="width:64%;"></div></div>
+          <span class="decade-rate">~8.1%</span>
+        </div>
+        <div class="decade-row">
+          <span class="decade-label">2000s</span>
+          <div class="decade-bar-track"><div class="decade-bar-fill" style="width:50%;"></div></div>
+          <span class="decade-rate">~6.3%</span>
+        </div>
+        <div class="decade-row">
+          <span class="decade-label">2010s</span>
+          <div class="decade-bar-track"><div class="decade-bar-fill" style="width:32%;"></div></div>
+          <span class="decade-rate">~4.1%</span>
+        </div>
+        <div class="decade-row">
+          <span class="decade-label">2020s (so far)</span>
+          <div class="decade-bar-track"><div class="decade-bar-fill" style="width:48%;"></div></div>
+          <span class="decade-rate">~6.0%</span>
+        </div>
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;">Approximate decade averages based on long-run <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a> historical data. Figures are illustrative averages, not precise annual data points.</p>
+      </div>
+
+      <div class="callout callout-key">
+        <i class="ti ti-key"></i>
+        <div class="callout-content">
+          <strong>The 1980s were the real outlier — not recently</strong>
+          <p>In October 1981, the 30-year fixed rate peaked at over 18%, driven by the Federal Reserve's aggressive fight against runaway inflation. Compared to that, even periods regarded as "high" in recent years remain historically moderate.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <h2 id="why-rates-feel-high">3. Why today's rates can feel high</h2>
+
+      <p>Three factors combine to make current-era rates feel more dramatic than they are in pure historical terms:</p>
+
+      <ul>
+        <li><strong>Recency anchoring</strong> — buyers who entered the market or refinanced during 2020–2021's sub-3% window experience any return toward 6-7% as a major increase, even though it's closer to the long-run historical average.</li>
+        <li><strong>Home price growth</strong> — even at a stable rate, rising home prices increase the dollar amount being financed, which increases the monthly payment independent of the rate itself.</li>
+        <li><strong>Speed of the move</strong> — rates rose unusually quickly from their 2021 lows, which felt more disruptive than a similar-sized move spread across several years.</li>
+      </ul>
+
+      <!-- SECTION 4 -->
+      <h2 id="what-drives-changes">4. What drives long-term rate changes</h2>
+
+      <p>Mortgage rates broadly track the cost of long-term borrowing across the economy, influenced by inflation expectations, Federal Reserve policy, and the bond market — particularly the 10-year US Treasury yield. For the mechanics of how this works in more detail, see our <a href="/mortgage-rates-today.html">full mortgage rates guide</a>.</p>
+
+      <p>The Federal Reserve's <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener">FOMC meeting calendar</a> is published in advance and is worth monitoring if you're trying to understand the policy backdrop driving current rate conditions.</p>
+
+      <!-- SECTION 5 — WORKED EXAMPLE -->
+      <h2 id="worked-example">5. Worked example — the payment impact of "normal"</h2>
+
+      <div class="example-box">
+        <div class="example-label">Worked example</div>
+        <div class="example-title">Comparing a $320,000 loan across three rate environments</div>
+        <div class="example-grid">
+          <div class="example-stat">
+            <span class="example-stat-num">2.9%</span>
+            <span class="example-stat-label">2021 low</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">6.8%</span>
+            <span class="example-stat-label">Recent average</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">8.1%</span>
+            <span class="example-stat-label">1990s average</span>
+          </div>
+        </div>
+        <div class="example-body">
+          <p>On a $320,000 30-year fixed loan:</p>
+          <p>At <strong>2.9%</strong> (2021 low): monthly payment ≈ <strong>$1,332</strong></p>
+          <p>At <strong>6.8%</strong> (recent average): monthly payment ≈ <strong>$2,089</strong></p>
+          <p>At <strong>8.1%</strong> (typical 1990s rate): monthly payment ≈ <strong>$2,372</strong></p>
+          <p>The jump from the 2021 low to recent averages represents a genuinely significant increase in monthly cost — $757 more per month on this loan size. But by the standard of the 1990s, today's typical rate is still meaningfully lower, not higher.</p>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            Will mortgage rates go back down to 3%?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">No one can predict this reliably. The 2020–2021 rates were the product of a specific emergency monetary policy response, not a typical market condition. Historically, sub-4% 30-year fixed rates have been rare. It's not impossible rates fall meaningfully from current levels, but planning around a return to 2021-era rates is speculative.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Should I wait for rates to drop before buying?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">This is one of the most common questions, and there's no universally correct answer. Waiting carries the risk that home prices rise in the meantime, potentially offsetting any rate benefit. Most financial professionals suggest buying when you're personally financially ready rather than trying to time the rate cycle — you can always refinance later if rates fall.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            How often do mortgage rates change?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Daily, sometimes multiple times a day, in response to bond market movements and economic data. The <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a> captures a weekly snapshot every Thursday.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Why do rates from the 1980s look so extreme?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">The late 1970s and early 1980s saw runaway inflation in the US economy. The Federal Reserve, under Chairman Paul Volcker, raised interest rates aggressively to bring inflation under control, which pushed mortgage rates to historic highs — peaking above 18% in late 1981. It remains the most extreme period in modern US mortgage rate history.</div>
+        </div>
+      </div>
+
+      <!-- EDITORIAL DISCLAIMER -->
+      <div class="editorial-disclaimer">
+        <strong>Editorial disclaimer:</strong> This article is written for general
+        educational purposes and does not constitute financial or mortgage advice.
+        Historical rate figures are approximate decade averages based on long-run
+        <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a>
+        data and are illustrative rather than precise. Always consult a licensed
+        mortgage professional before making borrowing decisions. Content researched
+        and edited by Mike Lucas, with the assistance of AI writing tools.
+      </div>
+
+      <!-- AUTHOR BIO -->
+      <div class="author-bio">
+        <div class="author-avatar">
+          <i class="ti ti-user" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span class="author-label">About the author</span>
+          <span class="author-name">Mike Lucas — Founder, MyHomeRates.com</span>
+          <p class="author-desc">
+            Mike is a UK-based personal finance researcher who built MyHomeRates.com
+            after studying the US mortgage market and finding that millions of American
+            homeowners navigate the biggest financial decision of their lives without
+            plain-English guidance.
+            <a href="/about/">Read Mike's full story →</a>
+          </p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-card">
+        <h3>In this guide</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="#why-context-matters"><i class="ti ti-arrow-right"></i> Why context matters</a></li>
+          <li><a href="#decade-by-decade"><i class="ti ti-arrow-right"></i> Decade by decade</a></li>
+          <li><a href="#why-rates-feel-high"><i class="ti ti-arrow-right"></i> Why rates feel high</a></li>
+          <li><a href="#what-drives-changes"><i class="ti ti-arrow-right"></i> What drives changes</a></li>
+          <li><a href="#worked-example"><i class="ti ti-arrow-right"></i> Worked example</a></li>
+          <li><a href="#faq"><i class="ti ti-arrow-right"></i> FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Key sources</h3>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a></strong>
+            <span>Historical and current rate data</span>
+          </div>
+        </div>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener">FOMC Calendar</a></strong>
+            <span>Fed meeting dates and policy decisions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="/mortgage-rates-today.html"><i class="ti ti-arrow-right"></i> Mortgage rates today</a></li>
+          <li><a href="/fixed-rate-mortgage/"><i class="ti ti-arrow-right"></i> Fixed-rate mortgages</a></li>
+          <li><a href="/refinancing/"><i class="ti ti-arrow-right"></i> Refinancing guide</a></li>
+          <li><a href="/glossary/"><i class="ti ti-arrow-right"></i> Mortgage glossary</a></li>
+        </ul>
+      </div>
+
+      <a href="/#calculator" class="sidebar-cta">
+        <i class="ti ti-calculator"></i> Try the mortgage calculator
+      </a>
+
+    </aside>
+  </div>
+
+  <!-- SITE DISCLAIMER -->
+  <div class="site-disclaimer">
+    <p>
+      <strong>Editorial disclaimer:</strong> MyHomeRates.com is an independent
+      educational publisher. We have no lender relationships and receive no commission
+      from any financial product. Content on this site is researched and edited by
+      Mike Lucas, with the assistance of AI writing tools. Nothing on this site
+      constitutes financial advice. Always consult a licensed mortgage professional
+      before making borrowing decisions.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand-name">MyHome<span>Rates</span>.com</span>
+          <p class="footer-brand-desc">Independent mortgage education for US homeowners.
+            No lender relationships. No sales pitch. Just plain-English guidance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Mortgages</h4>
+          <ul>
+            <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+            <li><a href="/fha-loan/">FHA Loans</a></li>
+            <li><a href="/refinancing/">Refinancing</a></li>
+            <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/blog/">All Articles</a></li>
+            <li><a href="/glossary/">Glossary</a></li>
+            <li><a href="/#calculator">Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-use/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MyHomeRates.com · All rights reserved · An independent Mike Lucas publication</p>
+        <div class="footer-legal">
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms-of-use/">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JS -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

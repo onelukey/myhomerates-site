@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Is Mortgage Interest Tax Deductible? | MyHomeRates.com</title>
+  <meta name="description" content="The itemising vs standard deduction question, current IRS debt limits, and whether the mortgage interest deduction actually benefits you, explained simply." />
+  <link rel="canonical" href="https://www.myhomerates.com/blog/is-mortgage-interest-tax-deductible.html" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RLKEB7GMX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9RLKEB7GMX');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723787015797542" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    /* Page-specific: deduction decision flow */
+    .deduction-flow { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+    .deduction-flow h4 { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 1.1rem; }
+    .deduction-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .deduction-box { border-radius: 10px; padding: 1.1rem; text-align: center; }
+    .deduction-box.standard { background: var(--navy-light); }
+    .deduction-box.itemise { background: var(--gold-light); }
+    .deduction-box-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+    .deduction-box.standard .deduction-box-label { color: var(--navy); }
+    .deduction-box.itemise .deduction-box-label { color: var(--gold-dark); }
+    .deduction-box-amount { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--navy); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">MyHome<span>Rates</span>.com</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+        <li><a href="/fha-loan/">FHA Loans</a></li>
+        <li><a href="/refinancing/">Refinancing</a></li>
+        <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/glossary/">Glossary</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#calculator" class="nav-cta">Try Calculator</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="hero-pill"><i class="ti ti-receipt-tax"></i> Tax</div>
+      <h1>Is Mortgage Interest Tax Deductible?</h1>
+      <div class="page-header-meta">
+        <span><i class="ti ti-clock"></i> 8 min read</span>
+        <div class="meta-divider"></div>
+        <span><i class="ti ti-user"></i> Mike Lucas — Founder</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main-wrap">
+    <article class="article">
+
+      <!-- TOC -->
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title"><i class="ti ti-list"></i> In this guide</div>
+        <ol>
+          <li><a href="#the-short-answer">The short answer</a></li>
+          <li><a href="#itemise-vs-standard">Itemising vs the standard deduction</a></li>
+          <li><a href="#debt-limits">Current debt limits</a></li>
+          <li><a href="#what-else-counts">What else counts toward itemised deductions</a></li>
+          <li><a href="#worked-example">Worked example — does it actually help Linda?</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <!-- INTRO -->
+      <p>The mortgage interest tax deduction is one of the most talked-about — and most misunderstood — aspects of US homeownership. Many buyers assume it provides a guaranteed, significant tax benefit. For a large share of homeowners, particularly since the standard deduction roughly doubled in 2018, that's no longer automatically true. This guide explains exactly how it works today.</p>
+
+      <div class="callout callout-warning">
+        <i class="ti ti-alert-triangle"></i>
+        <div class="callout-content">
+          <strong>This is general education, not tax advice</strong>
+          <p>Tax situations vary significantly by individual circumstances. This article explains the general framework — always consult a qualified tax professional for advice specific to your situation.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 1 -->
+      <h2 id="the-short-answer">1. The short answer</h2>
+
+      <p>Mortgage interest is deductible — but only if you <strong>itemise deductions</strong> rather than take the standard deduction, and only if your itemised deductions exceed what the standard deduction would give you automatically. For many homeowners today, the standard deduction is actually larger than their itemisable deductions, meaning the mortgage interest deduction provides no additional tax benefit at all.</p>
+
+      <!-- SECTION 2 -->
+      <h2 id="itemise-vs-standard">2. Itemising vs the standard deduction</h2>
+
+      <p>Every taxpayer can choose between two approaches: take the standard deduction (a fixed amount, no questions asked) or itemise specific deductible expenses if their total exceeds the standard amount. The Tax Cuts and Jobs Act of 2017 significantly raised the standard deduction starting in 2018, which means fewer homeowners benefit from itemising than in previous decades.</p>
+
+      <div class="deduction-flow">
+        <h4>The basic comparison</h4>
+        <div class="deduction-compare">
+          <div class="deduction-box standard">
+            <div class="deduction-box-label">Standard deduction</div>
+            <div class="deduction-box-amount">Fixed amount</div>
+            <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;">No itemising needed. Same for everyone in your filing status.</p>
+          </div>
+          <div class="deduction-box itemise">
+            <div class="deduction-box-label">Itemised deductions</div>
+            <div class="deduction-box-amount">Sum of expenses</div>
+            <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;">Mortgage interest + state/local taxes (capped) + charitable giving + more.</p>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1rem;">You take whichever is higher. Check current standard deduction amounts at <a href="https://www.irs.gov" target="_blank" rel="noopener">irs.gov</a>, as figures are adjusted annually for inflation.</p>
+      </div>
+
+      <!-- SECTION 3 -->
+      <h2 id="debt-limits">3. Current debt limits</h2>
+
+      <p>Per <a href="https://www.irs.gov/pub/irs-pdf/p936.pdf" target="_blank" rel="noopener">IRS Publication 936</a>, mortgage interest is deductible on up to <strong>$750,000</strong> of mortgage debt for loans originated after December 15, 2017. For mortgages taken out before that date, the prior limit of <strong>$1 million</strong> generally still applies. These limits apply to the combined total of debt on your primary residence and one additional qualifying home.</p>
+
+      <!-- SECTION 4 -->
+      <h2 id="what-else-counts">4. What else counts toward itemised deductions</h2>
+
+      <p>Mortgage interest doesn't stand alone — it's added to other itemisable expenses to determine your total. Common categories include:</p>
+      <ul>
+        <li>State and local taxes (SALT) — currently capped at $10,000 combined</li>
+        <li>Charitable contributions</li>
+        <li>Certain medical expenses exceeding a percentage-of-income threshold</li>
+        <li>Mortgage points (under specific conditions, often in the year of purchase)</li>
+      </ul>
+
+      <p>It's the combined total of all these categories that needs to exceed the standard deduction for itemising to provide any benefit.</p>
+
+      <!-- SECTION 5 — WORKED EXAMPLE -->
+      <h2 id="worked-example">5. Worked example — does it actually help Linda?</h2>
+
+      <div class="example-box">
+        <div class="example-label">Worked example</div>
+        <div class="example-title">Linda — single filer, $310,000 mortgage</div>
+        <div class="example-grid">
+          <div class="example-stat">
+            <span class="example-stat-num">~$19,500</span>
+            <span class="example-stat-label">Mortgage interest paid (yr 1)</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">$10,000</span>
+            <span class="example-stat-label">SALT deduction (capped)</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">$2,500</span>
+            <span class="example-stat-label">Charitable giving</span>
+          </div>
+        </div>
+        <div class="example-body">
+          <p>Linda's potential itemised deductions: $19,500 (mortgage interest) + $10,000 (SALT, capped) + $2,500 (charitable) = <strong>$32,000 total</strong>.</p>
+          <p>If the current standard deduction for a single filer is below $32,000, itemising clearly benefits Linda — she should itemise and claim the mortgage interest deduction.</p>
+          <p>If she had a smaller mortgage and lower interest paid — say $8,000 in mortgage interest, bringing her itemised total to roughly $20,500 — and the standard deduction exceeded that amount, itemising would provide no additional benefit. In that scenario, the mortgage interest deduction, while technically available, would be financially irrelevant to her — she'd simply take the standard deduction instead.</p>
+          <p>This illustrates why "is mortgage interest deductible" has a different practical answer depending on your specific loan size, other itemisable expenses, and the current standard deduction amount — always run your own numbers, ideally with a tax professional, rather than assuming the deduction automatically helps.</p>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            Do I need to do anything special to claim the mortgage interest deduction?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Your lender will send you Form 1098 each year, showing the total mortgage interest you paid. If you choose to itemise, this figure goes on Schedule A of your tax return. A tax professional or quality tax software will guide you through whether itemising benefits you.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Is HELOC or home equity loan interest also deductible?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Generally only if the funds were used to buy, build, or substantially improve the home securing the loan — not for other purposes like debt consolidation or general spending. This is a specific IRS rule introduced with the 2017 tax law changes. See <a href="https://www.irs.gov/pub/irs-pdf/p936.pdf" target="_blank" rel="noopener">IRS Publication 936</a> for full conditions.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Does PMI count as deductible mortgage interest?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">PMI deductibility has changed multiple times in recent tax years depending on legislation in effect. Check current-year IRS guidance or consult a tax professional, as this is one of the more frequently revised areas of mortgage-related tax rules.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Should the tax deduction influence whether I buy a more expensive home?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Generally, no — this is a common but flawed reasoning. You pay $1 in interest to potentially save a fraction of that $1 in taxes (only if itemising provides a net benefit over the standard deduction). The mortgage interest deduction should be viewed as a modest potential offset to borrowing costs, not a reason to take on a larger loan than you'd otherwise choose.</div>
+        </div>
+      </div>
+
+      <!-- EDITORIAL DISCLAIMER -->
+      <div class="editorial-disclaimer">
+        <strong>Editorial disclaimer:</strong> This article is written for general
+        educational purposes and does not constitute tax, financial, or mortgage
+        advice. Tax rules and limits change and vary by individual circumstances —
+        sourced from <a href="https://www.irs.gov/pub/irs-pdf/p936.pdf" target="_blank" rel="noopener">IRS Publication 936</a>.
+        Always consult a qualified tax professional for advice specific to your
+        situation. Content researched and edited by Mike Lucas, with the assistance
+        of AI writing tools.
+      </div>
+
+      <!-- AUTHOR BIO -->
+      <div class="author-bio">
+        <div class="author-avatar">
+          <i class="ti ti-user" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span class="author-label">About the author</span>
+          <span class="author-name">Mike Lucas — Founder, MyHomeRates.com</span>
+          <p class="author-desc">
+            Mike is a UK-based personal finance researcher who built MyHomeRates.com
+            after studying the US mortgage market and finding that millions of American
+            homeowners navigate the biggest financial decision of their lives without
+            plain-English guidance.
+            <a href="/about/">Read Mike's full story →</a>
+          </p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-card">
+        <h3>In this guide</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="#the-short-answer"><i class="ti ti-arrow-right"></i> The short answer</a></li>
+          <li><a href="#itemise-vs-standard"><i class="ti ti-arrow-right"></i> Itemise vs standard</a></li>
+          <li><a href="#debt-limits"><i class="ti ti-arrow-right"></i> Current debt limits</a></li>
+          <li><a href="#what-else-counts"><i class="ti ti-arrow-right"></i> What else counts</a></li>
+          <li><a href="#worked-example"><i class="ti ti-arrow-right"></i> Worked example</a></li>
+          <li><a href="#faq"><i class="ti ti-arrow-right"></i> FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Key sources</h3>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.irs.gov/pub/irs-pdf/p936.pdf" target="_blank" rel="noopener">IRS Publication 936</a></strong>
+            <span>Official mortgage interest deduction rules</span>
+          </div>
+        </div>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.irs.gov" target="_blank" rel="noopener">IRS.gov</a></strong>
+            <span>Current standard deduction amounts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="/blog/mortgage-points-explained.html"><i class="ti ti-arrow-right"></i> Mortgage points guide</a></li>
+          <li><a href="/refinancing/"><i class="ti ti-arrow-right"></i> Refinancing guide</a></li>
+          <li><a href="/glossary/"><i class="ti ti-arrow-right"></i> Mortgage glossary</a></li>
+        </ul>
+      </div>
+
+      <a href="/#calculator" class="sidebar-cta">
+        <i class="ti ti-calculator"></i> Try the mortgage calculator
+      </a>
+
+    </aside>
+  </div>
+
+  <!-- SITE DISCLAIMER -->
+  <div class="site-disclaimer">
+    <p>
+      <strong>Editorial disclaimer:</strong> MyHomeRates.com is an independent
+      educational publisher. We have no lender relationships and receive no commission
+      from any financial product. Content on this site is researched and edited by
+      Mike Lucas, with the assistance of AI writing tools. Nothing on this site
+      constitutes financial advice. Always consult a licensed mortgage professional
+      before making borrowing decisions.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand-name">MyHome<span>Rates</span>.com</span>
+          <p class="footer-brand-desc">Independent mortgage education for US homeowners.
+            No lender relationships. No sales pitch. Just plain-English guidance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Mortgages</h4>
+          <ul>
+            <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+            <li><a href="/fha-loan/">FHA Loans</a></li>
+            <li><a href="/refinancing/">Refinancing</a></li>
+            <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/blog/">All Articles</a></li>
+            <li><a href="/glossary/">Glossary</a></li>
+            <li><a href="/#calculator">Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-use/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MyHomeRates.com · All rights reserved · An independent Mike Lucas publication</p>
+        <div class="footer-legal">
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms-of-use/">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JS -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

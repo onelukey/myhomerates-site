@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ════════════════════════════════════════════════════════
+       UPDATE THESE THREE LINES FOR EVERY PAGE
+       ════════════════════════════════════════════════════════ -->
+  <title>PAGE TITLE — MyHomeRates.com</title>
+  <meta name="description" content="PAGE META DESCRIPTION — 150 characters max." />
+  <link rel="canonical" href="https://www.myhomerates.com/FOLDER-NAME/" />
+  <!-- ════════════════════════════════════════════════════════ -->
+
+  <!-- GA4 — same on every page, never change -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RLKEB7GMX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9RLKEB7GMX');
+  </script>
+
+  <!-- AdSense — same on every page, never change -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723787015797542" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- ════════════════════════════════════════════════════════
+       SHARED STYLESHEET — path adjusts per folder depth
+       Root page:       href="css/style.css"
+       One level deep:  href="../css/style.css"
+       ════════════════════════════════════════════════════════ -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────
+       Same on every page. Active class is set automatically
+       by main.js — no manual changes needed.
+       ──────────────────────────────────────────────────────── -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">MyHome<span>Rates</span>.com</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+        <li><a href="/fha-loan/">FHA Loans</a></li>
+        <li><a href="/refinancing/">Refinancing</a></li>
+        <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/glossary/">Glossary</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#calculator" class="nav-cta">Try Calculator</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO / PAGE HEADER ─────────────────────────────────
+       Pill icon options:
+       Fixed Rate    → ti-lock
+       FHA Loan      → ti-home-check
+       Refinancing   → ti-refresh
+       First-Time    → ti-key
+       Blog          → ti-article
+       Glossary      → ti-book-2
+       About         → ti-user
+       Contact       → ti-mail
+       Legal pages   → ti-shield
+       ──────────────────────────────────────────────────────── -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="hero-pill">
+        <i class="ti ti-ICON"></i> CATEGORY LABEL
+      </div>
+      <h1>PAGE HEADLINE</h1>
+      <!-- For content pages: read time + author -->
+      <div class="page-header-meta">
+        <span><i class="ti ti-clock"></i> X min read</span>
+        <div class="meta-divider"></div>
+        <span><i class="ti ti-user"></i> Mike Lucas — Founder</span>
+      </div>
+      <!-- For simple pages (About, Contact, Legal): replace meta with desc -->
+      <!-- <p class="page-header-desc">One line description of this page.</p> -->
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ────────────────────────────────────────
+       Two-column layout: article + sidebar
+       For full-width pages use class="main-wrap-full" instead
+       ──────────────────────────────────────────────────────── -->
+  <div class="main-wrap">
+
+    <article class="article">
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title"><i class="ti ti-list"></i> In this guide</div>
+        <ol>
+          <li><a href="#section-1">Section one title</a></li>
+          <li><a href="#section-2">Section two title</a></li>
+          <li><a href="#section-3">Section three title</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <!-- INTRO PARAGRAPH -->
+      <p>Opening paragraph — state clearly what this page covers and who it helps.</p>
+
+      <!-- TIP CALLOUT EXAMPLE -->
+      <div class="callout callout-tip">
+        <i class="ti ti-info-circle"></i>
+        <div class="callout-content">
+          <strong>Who this guide is for</strong>
+          <p>Describe the target reader here.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 1 -->
+      <h2 id="section-1">1. Section one heading</h2>
+      <p>Section content here.</p>
+
+      <!-- WARNING CALLOUT EXAMPLE -->
+      <div class="callout callout-warning">
+        <i class="ti ti-alert-triangle"></i>
+        <div class="callout-content">
+          <strong>Important warning heading</strong>
+          <p>Warning content here.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 2 -->
+      <h2 id="section-2">2. Section two heading</h2>
+      <p>Section content here.</p>
+
+      <!-- COMPARISON TABLE EXAMPLE -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Column One</th>
+              <th>Column Two</th>
+              <th>Column Three</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row value</td>
+              <td class="td-good">Good</td>
+              <td class="td-warn">Warning</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- WORKED EXAMPLE BOX -->
+      <div class="example-box">
+        <div class="example-label">Worked example</div>
+        <div class="example-title">Person name — scenario description</div>
+        <div class="example-grid">
+          <div class="example-stat">
+            <span class="example-stat-num">$000,000</span>
+            <span class="example-stat-label">Stat label</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">00yr</span>
+            <span class="example-stat-label">Stat label</span>
+          </div>
+          <div class="example-stat">
+            <span class="example-stat-num">0.0%</span>
+            <span class="example-stat-label">Stat label</span>
+          </div>
+        </div>
+        <div class="example-body">
+          <p>Worked example narrative. Use <strong>bold for key figures</strong>.</p>
+        </div>
+      </div>
+
+      <!-- KEY CALLOUT EXAMPLE -->
+      <div class="callout callout-key">
+        <i class="ti ti-key"></i>
+        <div class="callout-content">
+          <strong>Key takeaway heading</strong>
+          <p>The single most important point from this section.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <h2 id="section-3">3. Section three heading</h2>
+      <p>Section content here.</p>
+
+      <!-- PULL QUOTE -->
+      <div class="pull-quote">
+        <p>"Pull quote text here — a memorable one-sentence insight from this section."</p>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            Question one text?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Answer one text. No onclick needed — handled by main.js.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Question two text?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Answer two text.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Question three text?
+            <i class="ti ti-plus"></i>
+          </button>
+          <div class="faq-a">Answer three text.</div>
+        </div>
+      </div>
+
+      <!-- EDITORIAL DISCLAIMER — above author bio on every content page -->
+      <div class="editorial-disclaimer">
+        <strong>Editorial disclaimer:</strong> This article is written for general
+        educational purposes and does not constitute financial or mortgage advice.
+        Data sourced from <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac</a>,
+        the <a href="https://www.consumerfinance.gov" target="_blank" rel="noopener">CFPB</a>,
+        and <a href="https://www.hud.gov" target="_blank" rel="noopener">HUD</a>.
+        Always consult a licensed mortgage professional before making borrowing decisions.
+        Content researched and edited by Mike Lucas, with the assistance of AI writing tools.
+      </div>
+
+      <!-- AUTHOR BIO — above footer on every content page -->
+      <div class="author-bio">
+        <div class="author-avatar">
+          <i class="ti ti-user" aria-hidden="true"></i>
+        </div>
+        <div>
+          <span class="author-label">About the author</span>
+          <span class="author-name">Mike Lucas — Founder, MyHomeRates.com</span>
+          <p class="author-desc">
+            Mike is a UK-based personal finance researcher who built MyHomeRates.com
+            after studying the US mortgage market and finding that millions of American
+            homeowners navigate the biggest financial decision of their lives without
+            plain-English guidance. He monitors Federal Reserve policy, tracks mortgage
+            rate movements, and writes all content on this site with one goal: helping
+            American homebuyers make informed mortgage decisions.
+            <a href="/about/">Read Mike's full story →</a>
+          </p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ── SIDEBAR ──────────────────────────────────────────── -->
+    <aside class="sidebar">
+
+      <!-- In-page navigation -->
+      <div class="sidebar-card">
+        <h3>In this guide</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="#section-1"><i class="ti ti-arrow-right"></i> Section one</a></li>
+          <li><a href="#section-2"><i class="ti ti-arrow-right"></i> Section two</a></li>
+          <li><a href="#section-3"><i class="ti ti-arrow-right"></i> Section three</a></li>
+          <li><a href="#faq"><i class="ti ti-arrow-right"></i> FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Key sources -->
+      <div class="sidebar-card">
+        <h3>Key sources</h3>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener">Freddie Mac PMMS</a></strong>
+            <span>Weekly national mortgage rate averages</span>
+          </div>
+        </div>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.consumerfinance.gov" target="_blank" rel="noopener">CFPB</a></strong>
+            <span>Consumer mortgage rights and guides</span>
+          </div>
+        </div>
+        <div class="sidebar-stat">
+          <i class="ti ti-external-link"></i>
+          <div class="sidebar-stat-body">
+            <strong><a href="https://www.hud.gov" target="_blank" rel="noopener">HUD / FHA</a></strong>
+            <span>FHA loan requirements</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related guides -->
+      <div class="sidebar-card">
+        <h3>Related guides</h3>
+        <ul class="sidebar-link-list">
+          <li><a href="/fixed-rate-mortgage/"><i class="ti ti-arrow-right"></i> Fixed rate mortgages</a></li>
+          <li><a href="/fha-loan/"><i class="ti ti-arrow-right"></i> FHA loans explained</a></li>
+          <li><a href="/refinancing/"><i class="ti ti-arrow-right"></i> Refinancing guide</a></li>
+          <li><a href="/first-time-buyer/"><i class="ti ti-arrow-right"></i> First-time buyer guide</a></li>
+          <li><a href="/glossary/"><i class="ti ti-arrow-right"></i> Mortgage glossary</a></li>
+        </ul>
+      </div>
+
+      <!-- Calculator CTA -->
+      <a href="/#calculator" class="sidebar-cta">
+        <i class="ti ti-calculator"></i> Try the mortgage calculator
+      </a>
+
+    </aside>
+
+  </div><!-- end .main-wrap -->
+
+  <!-- ── SITE DISCLAIMER BAR ─────────────────────────────────
+       Same on every page. Never changes.
+       ──────────────────────────────────────────────────────── -->
+  <div class="site-disclaimer">
+    <p>
+      <strong>Editorial disclaimer:</strong> MyHomeRates.com is an independent
+      educational publisher. We have no lender relationships and receive no commission
+      from any financial product. Content on this site is researched and edited by
+      Mike Lucas, with the assistance of AI writing tools. Nothing on this site
+      constitutes financial advice. Always consult a licensed mortgage professional
+      before making borrowing decisions.
+    </p>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────
+       Same on every page. Never changes.
+       ──────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand-name">MyHome<span>Rates</span>.com</span>
+          <p class="footer-brand-desc">Independent mortgage education for US homeowners.
+            No lender relationships. No sales pitch. Just plain-English guidance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Mortgages</h4>
+          <ul>
+            <li><a href="/fixed-rate-mortgage/">Fixed Rate</a></li>
+            <li><a href="/fha-loan/">FHA Loans</a></li>
+            <li><a href="/refinancing/">Refinancing</a></li>
+            <li><a href="/first-time-buyer/">First-Time Buyer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/blog/">All Articles</a></li>
+            <li><a href="/glossary/">Glossary</a></li>
+            <li><a href="/#calculator">Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms-of-use/">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MyHomeRates.com · All rights reserved · An independent Mike Lucas publication</p>
+        <div class="footer-legal">
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms-of-use/">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── SHARED JS — path adjusts per folder depth ──────────
+       Root page:       src="js/main.js"
+       One level deep:  src="../js/main.js"
+       ──────────────────────────────────────────────────────── -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
